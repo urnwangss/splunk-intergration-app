@@ -107,7 +107,6 @@ export default {
                 children: (
                   <span class="table-action">
                     <a onclick={() => this.handleEdit(row)}>编辑</a> |{" "}
-                    <a onclick={() => this.handleView(row)}>详情</a> |{" "}
                     <a onclick={() => this.handleDel(row)}>删除</a>
                   </span>
                 ),
@@ -135,6 +134,7 @@ export default {
       return text ? dayjs(text).format("YYYY-MM-DD HH:mm:ss") : "- -";
     },
   },
+  //  <a onclick={() => this.handleView(row)}>详情</a> |{" "}
   methods: {
     // 搜索实例
     handlerSearch() {

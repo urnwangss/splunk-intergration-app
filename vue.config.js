@@ -4,14 +4,16 @@ module.exports = {
   lintOnSave: false,
   devServer: {
     proxy: {
-      "/arcana-api/app/proxy/mysql-integration-app": {
+      // "/arcana-api/app/proxy/mysql-integration-app": {
+      "/splunk-integration-app": {
         // target: "http://192.168.100.10:7085/mysql-integration-app",
-        target:
-          "http://192.168.1.235:7088/arcana-api/app/proxy/mysql-integration-app",
+        // target:
+        // "http://192.168.1.235:7088/arcana-api/app/proxy/mysql-integration-app",
+        target: "http://192.168.1.235:7088/",
         changeOrigin: true,
         secure: false,
         pathRewrite: {
-          "^/arcana-api/app/proxy/splunk-integration-app": "",
+          "^/splunk-integration-app": "",
         },
       },
     },

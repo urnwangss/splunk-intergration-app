@@ -100,7 +100,7 @@ export default {
         })
         .then((res) => {
           if (res.code === 0 && res.data.length) {
-            let { startime, endtime, ...form } = res.data;
+            let { startime, endtime, ...form } = res.data[0];
             this.form = {
               ...form,
               timeSelection: [startime, endtime],
@@ -110,7 +110,7 @@ export default {
     },
   },
   created() {
-    this.getEdgeList();
+    // this.getEdgeList();
     this.getInfo();
   },
 };

@@ -12,7 +12,7 @@
           <a-input v-model="form.sourceIp" allow-clear></a-input>
         </a-form-model-item>
         <a-form-model-item label="端口/port" prop="sourcePort">
-          <a-input v-model="form.sourcePort" ></a-input>
+          <a-input v-model="form.sourcePort"></a-input>
         </a-form-model-item>
         <a-form-model-item label="指定索引/index" prop="index">
           <a-input v-model="form.index" allow-clear></a-input>
@@ -59,7 +59,11 @@
           />
         </a-form-model-item>
         <a-form-model-item label="Edge" prop="edgeId">
-          <a-input v-model="form.edgeId" allow-clear placeholder="Edge"></a-input>
+          <a-input
+            v-model="form.edgeId"
+            allow-clear
+            placeholder="Edge"
+          ></a-input>
           <!-- <a-select v-model="form.edgeId">
             <a-select-option
               v-for="(item, index) in edgeList"
@@ -282,7 +286,7 @@ export default {
     },
   },
   created() {
-    this.getEdgeList();
+    // this.getEdgeList();
     if (this.isEdit) {
       this.$nextTick(() => {
         this.getInfo();

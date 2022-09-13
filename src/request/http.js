@@ -23,7 +23,8 @@ axios.defaults.headers["Content-Type"] = "application/json";
 
 // axios.defaults.baseURL = "http://server.natappfree.cc:35688/";
 // axios.defaults.baseURL = "http://localhost:7086/";
-axios.defaults.baseURL = "http://192.168.100.42:7086";
+// axios.defaults.baseURL = "http://192.168.100.42:7086";
+axios.defaults.baseURL = "http://192.168.100.217:7086";
 
 // 请求拦截器
 
