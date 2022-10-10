@@ -6,4 +6,7 @@ const APP_CONFIG = {
       path: "/dashboard/manage/preview/Mysqlyulan",
     },
   ],
+  api: {
+    baseUrl: "http://192.168.100.176:7086",
+  }
 };
